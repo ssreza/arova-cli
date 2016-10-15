@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arduino connectivity test</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <h1>johnny-five test</h1>
+    <div class="row">
+      <div class="col-md-4">
+      <h4>From Analog 0</h4>
+      <textarea class="form-control" style="background:#222; color:#00ff00;" rows="8" id="inData"></textarea>
+      </div>
+      <div class="col-md-4">
+      <h4>Servo to position:</h4>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="servobtn btn btn-primary">
+              <input type="radio" name="servo" id="servo1" value="0"> 0
+            </label>
+            <label class="servobtn btn btn-primary">
+              <input type="radio" name="servo" id="servo2" value="45"> 45
+            </label>
+            <label class="servobtn btn btn-primary">
+              <input type="radio" name="servo" id="servo3" value="90"> 90
+            </label>
+            <label class="servobtn btn btn-primary">
+              <input type="radio" name="servo" id="servo4" value="135"> 135
+            </label>            
+            <label class="servobtn btn btn-primary">
+              <input type="radio" name="servo" id="servo5" value="180"> 180
+            </label>
+        </div>
+      </div>
+      <div class="col-md-4">
+      <h4>LED Pulse Delay (ms)</h4>
+      <p><input type="text" class="form-control" id="ledDelay" name="ledDelay" value="1000" /></p>
+      <p><button id="ledSet" class="btn btn-primary">Set Delay</button></p>
+      </div>
+
+      <div class="col-md-12">
+        <div class="container directions">
+            <div>
+              <button  name="up" id="up" value="up" class="btn btn-primary"> up </button>
+            </div>
+            <div>
+             <button  name="up" id="down" value="0" class="btn btn-primary">  right
+             </button>
+            </div>
+            <div >
+              <button  name="up" id="left" value="0" class="btn btn-primary">  left
+              </button>
+            </div>
+            <div >
+              <button  name="up" id="right" value="0" class="btn btn-primary">  right
+              </button>
+            </div>            
+            
+        </div>
+        <div class="container">
+            <button class="btn btn-warning" id="brake">Stop </button>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="node_modules/socket.io-client/socket.io.js"></script>
+    <script src="index.js">
+
+    </script>
+    </body>
+</html>
