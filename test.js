@@ -1,12 +1,20 @@
 // initialize everything, web server, socket.io, filesystem, johnny-five
 var app = require('http').createServer(handler),
     path = require("path"),
+     url = require('url'),
     io = require('socket.io').listen(app),
     fs = require('fs'),
     five = require("johnny-five"),
     board, servo, led, sensor, motor, direction, position;
 
-
+const mimetypes = {
+    "html": "text/html",
+    "jpeg": "image/jpeg",
+    "jpg":"image/jpg",
+    "png": "image/png",
+    "js": "text/javascript",
+    "css":"text/css"
+}
 var fs = require("fs");
 
 function readJson() {
@@ -70,15 +78,31 @@ app.listen(3000);
 
 // handle web server
 function handler(req, res) {
-    fs.readFile(__dirname + '/index.html', function(err, data) {
-        if (err) {
-            res.writeHead(500);
-            return res.end('Error loading index.html');
-        }
-
-        res.writeHead(200);
-        res.end(data);
-    });
+    var uri = url.parse(req.url).pathname;
+    var fileName = path.join(process.cwd(), unescape(uri));
+    console.log(`loading ${uri}`);
+    var stats;
+    try{
+        stats = fs.lstatSync(fileName);
+    }catch(e){
+        res.writeHead(404, {'Content-type': 'text/plain'});
+        res.write('404 not found\n');
+        res.end();
+        return;
+    }
+    if (stats.isFile()) {
+        var mimeType = mimetypes[path.extname(fileName).split('.').reverse()[0]];
+        res.writeHead(200, {'Content-type': mimeType});
+        var fileStream = fs.createReadStream(fileName);
+        fileStream.pipe(res);
+    }else if (stats.isDirectory()) {
+        res.writeHead(302, {'Location': 'index.html'});
+        res.end();
+    }else{
+        res.writeHead(500, {'Content-type': 'text/plain'});
+        res.write('500 internal server error\n');
+        res.end();
+    }
 }
 
 
@@ -122,27 +146,16 @@ io.sockets.on('connection', function(socket) {
         if (data.command) {
             if (data.command === 'left') {
                 if (board.isReady) {
-                    fs.readFile("position.json", function(err, contents) {
-                        position = JSON.parse(contents)
-                        if (position.angle < 1000) {
+                   
+                    var left = setInterval(function() {
+                        direction.forward(255);
 
-                            var left = setInterval(function() {
-                                direction.forward(255);
-
-                            }, 50);
-                            setTimeout(function() {
-                                clearInterval(left);
+                    }, 70);
+                    setTimeout(function() {
+                        clearInterval(left);
 
 
-                            }, 1000 - position.angle);
-                            position.angle += 500;
-                            writeJson(position);
-
-                        }
-                        socket.emit('motorMsg', {
-                            raw: position
-                        });
-                    });
+                    }, 700);
 
 
 
@@ -157,29 +170,13 @@ io.sockets.on('connection', function(socket) {
             }
             if (data.command === 'right') {
                 if (board.isReady) {
-                    fs.readFile("position.json", function(err, contents) {
-                        position = JSON.parse(contents)
-                        if (position.angle > -1000) {
+                   var right = setInterval(function(){
+                        direction.reverse(255);
+                    }, 70);
+                    setTimeout(function() {
+                        clearInterval(right)
 
-                            var diff = 1000 + position.angle;
-
-                            var right = setInterval(function() {
-                                direction.reverse(255);
-
-                            }, 50);
-                            setTimeout(function() {
-                                clearInterval(right)
-
-
-                            }, diff);
-                            console.log(diff);
-                            position.angle -= 500;
-                            writeJson(position);
-                        }
-                        socket.emit('motorMsg', {
-                            raw: position
-                        });
-                    });
+                    }, 700);
 
 
                 }

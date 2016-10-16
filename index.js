@@ -1,7 +1,10 @@
 var moving = false;
 var socket = io.connect('http://localhost:3000');
+var angle= 1;
 socket.on('news', function(data) {
     console.log(data);
+    angle= data.position.angle;
+
 });
 socket.on('motorMsg', function(data) {
     console.log(data.raw);
@@ -50,7 +53,8 @@ $("#left").on('click', function() {
 
 
 
-var speed = 20;
+var speed = 50;
+
 document.addEventListener('keydown', function(event) {
 
     if (event.keyCode === 87) {
@@ -97,21 +101,23 @@ document.addEventListener('keydown', function(event) {
     }
 
     if (event.keyCode == 65) {
+         if (angle>-5) {
+            socket.emit('direction', {
+                command: "left"
+            }); 
+            angle-=1;
+        }
 
-
-        socket.emit('direction', {
-            command: "left"
-        });
 
     }
 
     if (event.keyCode == 68) {
-
-
-        socket.emit('direction', {
-            command: "right"
-        });
-
+        if (angle<5) {
+            socket.emit('direction', {
+                command: "right"
+            }); 
+            angle++;
+        }
     }
 
     if (event.keyCode == 32) {
