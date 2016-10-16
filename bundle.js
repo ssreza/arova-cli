@@ -1,7 +1,7 @@
 ;(function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require=="function"&&require;if(!s&&o)return o(n,!0);if(r)return r(n,!0);throw new Error("Cannot find module '"+n+"'")}var u=t[n]={exports:{}};e[n][0].call(u.exports,function(t){var r=e[n][1][t];return i(r?r:t)},u,u.exports)}return t[n].exports}var r=typeof require=="function"&&require;for(var s=0;s<n.length;s++)i(n[s]);return i})({1:[function(require,module,exports){
 var websocket = require('websocket-stream');
 
-var socket = websocket('ws://localhost:3000');
+var socks = websocket('ws://localhost:3000');
 
 console.log("connected");
 
@@ -13,7 +13,7 @@ var ctx = document.getElementById('canvas').getContext('2d');
 
 //video vis
 
-socket.on('data', function (data) {
+socks.on('data', function (data) {
   var bytearray = new Uint8Array(data);
   var imgdata = ctx.getImageData(0,0, width, height);
   var imgdatalen = imgdata.data.length;
@@ -38,9 +38,9 @@ socket.on('data', function (data) {
 
 });
 
-socket.on('end', function(){
+socks.on('end', function(){
   console.log("stream ended");
-  socket.close();
+  socks.close();
 });
 
 },{"websocket-stream":2}],3:[function(require,module,exports){

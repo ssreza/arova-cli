@@ -1,0 +1,880 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/reza/.nvm/v6.3.1/bin/node',
+1 verbose cli   '/home/reza/.nvm/v6.3.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'kinect' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData kinect@~0.1.7
+8 silly fetchNamedPackageData kinect
+9 silly mapToRegistry name kinect
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'kinect',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'kinect',
+12 silly mapToRegistry   name: 'kinect',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/kinect
+14 verbose request uri https://registry.npmjs.org/kinect
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:17:18 AM
+17 verbose request id 33a3ae154fcd73f4
+18 verbose etag "8TI3Z7U35JPF2SPPIXR5U2U4S"
+19 http request GET https://registry.npmjs.org/kinect
+20 http 304 https://registry.npmjs.org/kinect
+21 verbose headers { date: 'Sun, 16 Oct 2016 14:17:18 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"8TI3Z7U35JPF2SPPIXR5U2U4S"',
+21 verbose headers   age: '25',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-jfk8122-JFK',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1476627438.580381,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sun, 16 Oct 2016 14:17:18 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"8TI3Z7U35JPF2SPPIXR5U2U4S"',
+22 silly get     age: '25',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-jfk8122-JFK',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1476627438.580381,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/kinect from cache
+24 verbose get saving kinect to /home/reza/.npm/registry.npmjs.org/kinect/.cache.json
+25 verbose correctMkdir /home/reza/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule kinect@0.1.7 checking installable status
+39 silly cache add args [ 'kinect@~0.1.7', null ]
+40 verbose cache add spec kinect@~0.1.7
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'kinect@~0.1.7',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'kinect',
+41 silly cache add   name: 'kinect',
+41 silly cache add   rawSpec: '~0.1.7',
+41 silly cache add   spec: '>=0.1.7 <0.2.0',
+41 silly cache add   type: 'range' }
+42 silly addNamed kinect@>=0.1.7 <0.2.0
+43 verbose addNamed ">=0.1.7 <0.2.0" is a valid semver range for kinect
+44 silly addNameRange { name: 'kinect', range: '>=0.1.7 <0.2.0', hasData: false }
+45 silly mapToRegistry name kinect
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'kinect',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'kinect',
+48 silly mapToRegistry   name: 'kinect',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/kinect
+50 verbose addNameRange registry:https://registry.npmjs.org/kinect not in flight; fetching
+51 verbose get https://registry.npmjs.org/kinect not expired, no request
+52 silly addNameRange number 2 { name: 'kinect', range: '>=0.1.7 <0.2.0', hasData: true }
+53 silly addNameRange versions [ 'kinect',
+53 silly addNameRange   [ '0.1.0',
+53 silly addNameRange     '0.1.1',
+53 silly addNameRange     '0.1.2',
+53 silly addNameRange     '0.1.3',
+53 silly addNameRange     '0.1.4',
+53 silly addNameRange     '0.1.5',
+53 silly addNameRange     '0.1.6',
+53 silly addNameRange     '0.1.7',
+53 silly addNameRange     '0.2.0',
+53 silly addNameRange     '0.3.0' ] ]
+54 silly addNamed kinect@0.1.7
+55 verbose addNamed "0.1.7" is a plain semver version for kinect
+56 silly cache afterAdd kinect@0.1.7
+57 verbose afterAdd /home/reza/.npm/kinect/0.1.7/package/package.json not in flight; writing
+58 verbose correctMkdir /home/reza/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/reza/.npm/kinect/0.1.7/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree arduino-ctrl@1.0.0
+62 silly currentTree ├── active-x-obfuscator@0.0.1
+62 silly currentTree ├── after@0.8.1
+62 silly currentTree ├── amdefine@1.0.0
+62 silly currentTree ├── ansi-regex@2.0.0
+62 silly currentTree ├── ansi-styles@2.2.1
+62 silly currentTree ├── arraybuffer.slice@0.0.6
+62 silly currentTree ├── astw@0.0.0
+62 silly currentTree ├── backo2@1.0.2
+62 silly currentTree ├── base64-arraybuffer@0.1.5
+62 silly currentTree ├── base64-js@0.0.2
+62 silly currentTree ├── Base64@0.1.4
+62 silly currentTree ├── base64id@0.1.0
+62 silly currentTree ├── benchmark@1.0.0
+62 silly currentTree ├── better-assert@1.0.2
+62 silly currentTree ├── bindings@1.2.1
+62 silly currentTree ├── blob@0.0.4
+62 silly currentTree ├── bops@0.0.6
+62 silly currentTree ├── browser-builtins@1.0.7
+62 silly currentTree ├── browser-pack@0.9.4
+62 silly currentTree ├─┬ browser-resolve@1.0.1
+62 silly currentTree │ └── resolve@0.4.0
+62 silly currentTree ├── browser-serialport@2.0.3
+62 silly currentTree ├── browserify@2.18.1
+62 silly currentTree ├── buffer-browserify@0.1.0
+62 silly currentTree ├── buffer-crc32@0.2.1
+62 silly currentTree ├─┬ buffer-stream@0.0.1
+62 silly currentTree │ └── duplexer@0.0.2
+62 silly currentTree ├── bufferstream@0.5.2
+62 silly currentTree ├── buffertools@2.1.4
+62 silly currentTree ├── bytes@0.2.0
+62 silly currentTree ├── callsite@1.0.0
+62 silly currentTree ├── chalk@1.1.3
+62 silly currentTree ├── color-convert@1.2.2
+62 silly currentTree ├── combine-source-map@0.1.3
+62 silly currentTree ├── commander@2.9.0
+62 silly currentTree ├── commondir@0.0.2
+62 silly currentTree ├── component-bind@1.0.0
+62 silly currentTree ├── component-emitter@1.1.2
+62 silly currentTree ├── component-inherit@0.0.3
+62 silly currentTree ├── concat-stream@0.1.1
+62 silly currentTree ├── connect@2.7.11
+62 silly currentTree ├── console-browserify@0.1.6
+62 silly currentTree ├── constants-browserify@0.0.1
+62 silly currentTree ├── convert-source-map@0.2.6
+62 silly currentTree ├── cookie-signature@1.0.1
+62 silly currentTree ├── cookie@0.0.5
+62 silly currentTree ├── crypto-browserify@1.0.9
+62 silly currentTree ├── cylon@1.3.0
+62 silly currentTree ├── debug@2.2.0
+62 silly currentTree ├── deep-equal@0.0.0
+62 silly currentTree ├── define-properties@1.1.2
+62 silly currentTree ├── defined@0.0.0
+62 silly currentTree ├── detective@2.1.2
+62 silly currentTree ├── duplexer@0.0.4
+62 silly currentTree ├── ease-component@1.0.0
+62 silly currentTree ├── engine.io-client@1.7.0
+62 silly currentTree ├─┬ engine.io-parser@1.3.0
+62 silly currentTree │ └── has-binary@0.1.6
+62 silly currentTree ├── es6-shim@0.35.1
+62 silly currentTree ├── escape-string-regexp@1.0.5
+62 silly currentTree ├── escodegen@0.0.15
+62 silly currentTree ├── esprima@1.0.2
+62 silly currentTree ├── firmata@0.14.1
+62 silly currentTree ├── foreach@2.0.5
+62 silly currentTree ├── formidable@1.0.14
+62 silly currentTree ├── fresh@0.1.0
+62 silly currentTree ├── function-bind@1.1.0
+62 silly currentTree ├─┬ gl-pixel-stream@1.0.2
+62 silly currentTree │ └─┬ readable-stream@2.1.5
+62 silly currentTree │   ├── buffer-shims@1.0.0
+62 silly currentTree │   ├── core-util-is@1.0.2
+62 silly currentTree │   ├── inherits@2.0.3
+62 silly currentTree │   ├── isarray@1.0.0
+62 silly currentTree │   ├── process-nextick-args@1.0.7
+62 silly currentTree │   ├── string_decoder@0.10.31
+62 silly currentTree │   └── util-deprecate@1.0.2
+62 silly currentTree ├── graceful-readlink@1.0.1
+62 silly currentTree ├── has-ansi@2.0.0
+62 silly currentTree ├── has-binary@0.1.7
+62 silly currentTree ├── has-cors@1.1.0
+62 silly currentTree ├─┬ http-browserify@0.1.14
+62 silly currentTree │ └── concat-stream@1.0.1
+62 silly currentTree ├── immediate@3.0.6
+62 silly currentTree ├── indexof@0.0.1
+62 silly currentTree ├── inherits@1.0.2
+62 silly currentTree ├── inline-source-map@0.2.5
+62 silly currentTree ├─┬ insert-module-globals@0.2.1
+62 silly currentTree │ ├── JSONStream@0.4.4
+62 silly currentTree │ └── through@2.2.7
+62 silly currentTree ├── isarray@0.0.1
+62 silly currentTree ├── isbuffer@0.0.0
+62 silly currentTree ├── johnny-five@0.10.3
+62 silly currentTree ├── jquery@3.1.1
+62 silly currentTree ├── jsonify@0.0.0
+62 silly currentTree ├── jsonparse@0.0.5
+62 silly currentTree ├─┬ JSONStream@0.6.4
+62 silly currentTree │ └── through@2.2.7
+62 silly currentTree ├── lexical-scope@0.0.15
+62 silly currentTree ├── lie@3.1.0
+62 silly currentTree ├── lodash.clonedeep@4.5.0
+62 silly currentTree ├── lodash.debounce@4.0.8
+62 silly currentTree ├── mime@1.2.11
+62 silly currentTree ├─┬ module-deps@0.10.3
+62 silly currentTree │ ├── concat-stream@1.0.1
+62 silly currentTree │ └── resolve@0.4.3
+62 silly currentTree ├── ms@0.7.1
+62 silly currentTree ├── nan@2.4.0
+62 silly currentTree ├── nanotimer@0.3.10
+62 silly currentTree ├─┬ node-ssh@3.0.1
+62 silly currentTree │ ├── sb-promisify@2.0.1
+62 silly currentTree │ ├─┬ sb-scandir@1.0.0
+62 silly currentTree │ │ └── sb-promisify@1.3.0
+62 silly currentTree │ ├── shell-escape@0.2.0
+62 silly currentTree │ └─┬ ssh2@0.5.2
+62 silly currentTree │   └─┬ ssh2-streams@0.1.11
+62 silly currentTree │     ├── asn1@0.2.3
+62 silly currentTree │     ├── semver@5.3.0
+62 silly currentTree │     └── streamsearch@0.1.2
+62 silly currentTree ├── object-component@0.0.3
+62 silly currentTree ├── object-keys@1.0.11
+62 silly currentTree ├── object.assign@4.0.4
+62 silly currentTree ├── optimist@0.5.2
+62 silly currentTree ├── options@0.0.6
+62 silly currentTree ├── parse-base64vlq-mappings@0.1.4
+62 silly currentTree ├── parsejson@0.0.1
+62 silly currentTree ├── parseqs@0.0.2
+62 silly currentTree ├── parseuri@0.0.4
+62 silly currentTree ├── pause-stream@0.0.4
+62 silly currentTree ├── pause@0.0.1
+62 silly currentTree ├── policyfile@0.0.4
+62 silly currentTree ├── process@0.5.2
+62 silly currentTree ├── punycode@1.2.4
+62 silly currentTree ├── qs@0.6.5
+62 silly currentTree ├── range-parser@0.0.4
+62 silly currentTree ├── redis@0.7.3
+62 silly currentTree ├── resolve@0.3.1
+62 silly currentTree ├── rfile@1.0.0
+62 silly currentTree ├── ruglify@1.0.0
+62 silly currentTree ├── send@0.1.1
+62 silly currentTree ├─┬ serialport@4.0.3
+62 silly currentTree │ └─┬ node-pre-gyp@0.6.30
+62 silly currentTree │   ├─┬ mkdirp@0.5.1
+62 silly currentTree │   │ └── minimist@0.0.8
+62 silly currentTree │   ├─┬ nopt@3.0.6
+62 silly currentTree │   │ └── abbrev@1.0.9
+62 silly currentTree │   ├─┬ npmlog@4.0.0
+62 silly currentTree │   │ ├─┬ are-we-there-yet@1.1.2
+62 silly currentTree │   │ │ ├── delegates@1.0.0
+62 silly currentTree │   │ │ └─┬ readable-stream@2.1.5
+62 silly currentTree │   │ │   ├── buffer-shims@1.0.0
+62 silly currentTree │   │ │   ├── core-util-is@1.0.2
+62 silly currentTree │   │ │   ├── inherits@2.0.3
+62 silly currentTree │   │ │   ├── isarray@1.0.0
+62 silly currentTree │   │ │   ├── process-nextick-args@1.0.7
+62 silly currentTree │   │ │   ├── string_decoder@0.10.31
+62 silly currentTree │   │ │   └── util-deprecate@1.0.2
+62 silly currentTree │   │ ├── console-control-strings@1.1.0
+62 silly currentTree │   │ ├─┬ gauge@2.6.0
+62 silly currentTree │   │ │ ├── aproba@1.0.4
+62 silly currentTree │   │ │ ├── has-color@0.1.7
+62 silly currentTree │   │ │ ├── has-unicode@2.0.1
+62 silly currentTree │   │ │ ├── object-assign@4.1.0
+62 silly currentTree │   │ │ ├── signal-exit@3.0.1
+62 silly currentTree │   │ │ ├─┬ string-width@1.0.2
+62 silly currentTree │   │ │ │ ├─┬ code-point-at@1.0.1
+62 silly currentTree │   │ │ │ │ └── number-is-nan@1.0.1
+62 silly currentTree │   │ │ │ └─┬ is-fullwidth-code-point@1.0.0
+62 silly currentTree │   │ │ │   └── number-is-nan@1.0.1
+62 silly currentTree │   │ │ ├─┬ strip-ansi@3.0.1
+62 silly currentTree │   │ │ │ └── ansi-regex@2.0.0
+62 silly currentTree │   │ │ └── wide-align@1.1.0
+62 silly currentTree │   │ └── set-blocking@2.0.0
+62 silly currentTree │   ├─┬ rc@1.1.6
+62 silly currentTree │   │ ├── deep-extend@0.4.1
+62 silly currentTree │   │ ├── ini@1.3.4
+62 silly currentTree │   │ ├── minimist@1.2.0
+62 silly currentTree │   │ └── strip-json-comments@1.0.4
+62 silly currentTree │   ├─┬ request@2.75.0
+62 silly currentTree │   │ ├── aws-sign2@0.6.0
+62 silly currentTree │   │ ├── aws4@1.4.1
+62 silly currentTree │   │ ├─┬ bl@1.1.2
+62 silly currentTree │   │ │ └─┬ readable-stream@2.0.6
+62 silly currentTree │   │ │   ├── core-util-is@1.0.2
+62 silly currentTree │   │ │   ├── inherits@2.0.3
+62 silly currentTree │   │ │   ├── isarray@1.0.0
+62 silly currentTree │   │ │   ├── process-nextick-args@1.0.7
+62 silly currentTree │   │ │   ├── string_decoder@0.10.31
+62 silly currentTree │   │ │   └── util-deprecate@1.0.2
+62 silly currentTree │   │ ├── caseless@0.11.0
+62 silly currentTree │   │ ├─┬ combined-stream@1.0.5
+62 silly currentTree │   │ │ └── delayed-stream@1.0.0
+62 silly currentTree │   │ ├── extend@3.0.0
+62 silly currentTree │   │ ├── forever-agent@0.6.1
+62 silly currentTree │   │ ├─┬ form-data@2.0.0
+62 silly currentTree │   │ │ └── asynckit@0.4.0
+62 silly currentTree │   │ ├─┬ har-validator@2.0.6
+62 silly currentTree │   │ │ ├─┬ chalk@1.1.3
+62 silly currentTree │   │ │ │ ├── ansi-styles@2.2.1
+62 silly currentTree │   │ │ │ ├── escape-string-regexp@1.0.5
+62 silly currentTree │   │ │ │ ├─┬ has-ansi@2.0.0
+62 silly currentTree │   │ │ │ │ └── ansi-regex@2.0.0
+62 silly currentTree │   │ │ │ ├─┬ strip-ansi@3.0.1
+62 silly currentTree │   │ │ │ │ └── ansi-regex@2.0.0
+62 silly currentTree │   │ │ │ └── supports-color@2.0.0
+62 silly currentTree │   │ │ ├─┬ is-my-json-valid@2.15.0
+62 silly currentTree │   │ │ │ ├── generate-function@2.0.0
+62 silly currentTree │   │ │ │ ├─┬ generate-object-property@1.2.0
+62 silly currentTree │   │ │ │ │ └── is-property@1.0.2
+62 silly currentTree │   │ │ │ ├── jsonpointer@4.0.0
+62 silly currentTree │   │ │ │ └── xtend@4.0.1
+62 silly currentTree │   │ │ └─┬ pinkie-promise@2.0.1
+62 silly currentTree │   │ │   └── pinkie@2.0.4
+62 silly currentTree │   │ ├─┬ hawk@3.1.3
+62 silly currentTree │   │ │ ├── boom@2.10.1
+62 silly currentTree │   │ │ ├── cryptiles@2.0.5
+62 silly currentTree │   │ │ ├── hoek@2.16.3
+62 silly currentTree │   │ │ └── sntp@1.0.9
+62 silly currentTree │   │ ├─┬ http-signature@1.1.1
+62 silly currentTree │   │ │ ├── assert-plus@0.2.0
+62 silly currentTree │   │ │ ├─┬ jsprim@1.3.1
+62 silly currentTree │   │ │ │ ├── extsprintf@1.0.2
+62 silly currentTree │   │ │ │ ├── json-schema@0.2.3
+62 silly currentTree │   │ │ │ └── verror@1.3.6
+62 silly currentTree │   │ │ └─┬ sshpk@1.10.1
+62 silly currentTree │   │ │   ├── asn1@0.2.3
+62 silly currentTree │   │ │   ├── assert-plus@1.0.0
+62 silly currentTree │   │ │   ├── bcrypt-pbkdf@1.0.0
+62 silly currentTree │   │ │   ├── dashdash@1.14.0
+62 silly currentTree │   │ │   ├── ecc-jsbn@0.1.1
+62 silly currentTree │   │ │   ├── getpass@0.1.6
+62 silly currentTree │   │ │   ├── jodid25519@1.0.2
+62 silly currentTree │   │ │   ├── jsbn@0.1.0
+62 silly currentTree │   │ │   └── tweetnacl@0.14.3
+62 silly currentTree │   │ ├── is-typedarray@1.0.0
+62 silly currentTree │   │ ├── isstream@0.1.2
+62 silly currentTree │   │ ├── json-stringify-safe@5.0.1
+62 silly currentTree │   │ ├─┬ mime-types@2.1.12
+62 silly currentTree │   │ │ └── mime-db@1.24.0
+62 silly currentTree │   │ ├── node-uuid@1.4.7
+62 silly currentTree │   │ ├── oauth-sign@0.8.2
+62 silly currentTree │   │ ├── qs@6.2.1
+62 silly currentTree │   │ ├── stringstream@0.0.5
+62 silly currentTree │   │ ├── tough-cookie@2.3.1
+62 silly currentTree │   │ └── tunnel-agent@0.4.3
+62 silly currentTree │   ├─┬ rimraf@2.5.4
+62 silly currentTree │   │ └─┬ glob@7.1.0
+62 silly currentTree │   │   ├── fs.realpath@1.0.0
+62 silly currentTree │   │   ├─┬ inflight@1.0.5
+62 silly currentTree │   │   │ └── wrappy@1.0.2
+62 silly currentTree │   │   ├── inherits@2.0.3
+62 silly currentTree │   │   ├─┬ minimatch@3.0.3
+62 silly currentTree │   │   │ └─┬ brace-expansion@1.1.6
+62 silly currentTree │   │   │   ├── balanced-match@0.4.2
+62 silly currentTree │   │   │   └── concat-map@0.0.1
+62 silly currentTree │   │   ├─┬ once@1.4.0
+62 silly currentTree │   │   │ └── wrappy@1.0.2
+62 silly currentTree │   │   └── path-is-absolute@1.0.1
+62 silly currentTree │   ├── semver@5.3.0
+62 silly currentTree │   ├─┬ tar-pack@3.1.4
+62 silly currentTree │   │ ├─┬ fstream-ignore@1.0.5
+62 silly currentTree │   │ │ ├── inherits@2.0.3
+62 silly currentTree │   │ │ └─┬ minimatch@3.0.3
+62 silly currentTree │   │ │   └─┬ brace-expansion@1.1.6
+62 silly currentTree │   │ │     ├── balanced-match@0.4.2
+62 silly currentTree │   │ │     └── concat-map@0.0.1
+62 silly currentTree │   │ ├─┬ fstream@1.0.10
+62 silly currentTree │   │ │ ├── graceful-fs@4.1.9
+62 silly currentTree │   │ │ └── inherits@2.0.3
+62 silly currentTree │   │ ├─┬ once@1.3.3
+62 silly currentTree │   │ │ └── wrappy@1.0.2
+62 silly currentTree │   │ ├─┬ readable-stream@2.1.5
+62 silly currentTree │   │ │ ├── buffer-shims@1.0.0
+62 silly currentTree │   │ │ ├── core-util-is@1.0.2
+62 silly currentTree │   │ │ ├── inherits@2.0.3
+62 silly currentTree │   │ │ ├── isarray@1.0.0
+62 silly currentTree │   │ │ ├── process-nextick-args@1.0.7
+62 silly currentTree │   │ │ ├── string_decoder@0.10.31
+62 silly currentTree │   │ │ └── util-deprecate@1.0.2
+62 silly currentTree │   │ └── uid-number@0.0.6
+62 silly currentTree │   └─┬ tar@2.2.1
+62 silly currentTree │     ├── block-stream@0.0.9
+62 silly currentTree │     ├─┬ fstream@1.0.10
+62 silly currentTree │     │ └── graceful-fs@4.1.9
+62 silly currentTree │     └── inherits@2.0.3
+62 silly currentTree ├── shell-quote@0.0.1
+62 silly currentTree ├─┬ socket.io-client@1.5.0
+62 silly currentTree │ └── component-emitter@1.2.0
+62 silly currentTree ├─┬ socket.io-parser@2.2.6
+62 silly currentTree │ └── json3@3.3.2
+62 silly currentTree ├─┬ socket.io@0.9.17
+62 silly currentTree │ ├── commander@2.1.0
+62 silly currentTree │ ├── nan@1.0.0
+62 silly currentTree │ ├── socket.io-client@0.9.16
+62 silly currentTree │ ├── uglify-js@1.2.5
+62 silly currentTree │ └── ws@0.4.32
+62 silly currentTree ├── source-map@0.1.43
+62 silly currentTree ├── step@0.0.6
+62 silly currentTree ├── strip-ansi@3.0.1
+62 silly currentTree ├── supports-color@2.0.0
+62 silly currentTree ├─┬ syntax-error@0.0.1
+62 silly currentTree │ └── esprima@0.9.9
+62 silly currentTree ├── tape@0.2.2
+62 silly currentTree ├── temporal@0.5.0
+62 silly currentTree ├── through@2.3.8
+62 silly currentTree ├── tinycolor@0.0.1
+62 silly currentTree ├── to-array@0.1.4
+62 silly currentTree ├── to-utf8@0.0.1
+62 silly currentTree ├─┬ uglify-js@2.2.5
+62 silly currentTree │ └── optimist@0.3.7
+62 silly currentTree ├── ultron@1.0.2
+62 silly currentTree ├── umd@1.1.1
+62 silly currentTree ├── vm-browserify@0.0.4
+62 silly currentTree ├── websocket-stream@0.1.0
+62 silly currentTree ├── wordwrap@0.0.3
+62 silly currentTree ├── ws@1.1.1
+62 silly currentTree ├── wtf-8@1.0.0
+62 silly currentTree ├── xmlhttprequest-ssl@1.5.1
+62 silly currentTree ├── xmlhttprequest@1.4.2
+62 silly currentTree ├── yeast@0.1.2
+62 silly currentTree ├── zeparser@0.0.5
+62 silly currentTree └── zlib-browserify@0.0.3
+63 silly idealTree arduino-ctrl@1.0.0
+63 silly idealTree ├── active-x-obfuscator@0.0.1
+63 silly idealTree ├── after@0.8.1
+63 silly idealTree ├── amdefine@1.0.0
+63 silly idealTree ├── ansi-regex@2.0.0
+63 silly idealTree ├── ansi-styles@2.2.1
+63 silly idealTree ├── arraybuffer.slice@0.0.6
+63 silly idealTree ├── astw@0.0.0
+63 silly idealTree ├── backo2@1.0.2
+63 silly idealTree ├── base64-arraybuffer@0.1.5
+63 silly idealTree ├── base64-js@0.0.2
+63 silly idealTree ├── Base64@0.1.4
+63 silly idealTree ├── base64id@0.1.0
+63 silly idealTree ├── benchmark@1.0.0
+63 silly idealTree ├── better-assert@1.0.2
+63 silly idealTree ├── bindings@1.2.1
+63 silly idealTree ├── blob@0.0.4
+63 silly idealTree ├── bops@0.0.6
+63 silly idealTree ├── browser-builtins@1.0.7
+63 silly idealTree ├── browser-pack@0.9.4
+63 silly idealTree ├─┬ browser-resolve@1.0.1
+63 silly idealTree │ └── resolve@0.4.0
+63 silly idealTree ├── browser-serialport@2.0.3
+63 silly idealTree ├── browserify@2.18.1
+63 silly idealTree ├── buffer-browserify@0.1.0
+63 silly idealTree ├── buffer-crc32@0.2.1
+63 silly idealTree ├─┬ buffer-stream@0.0.1
+63 silly idealTree │ └── duplexer@0.0.2
+63 silly idealTree ├── bufferstream@0.5.2
+63 silly idealTree ├── buffertools@2.1.4
+63 silly idealTree ├── bytes@0.2.0
+63 silly idealTree ├── callsite@1.0.0
+63 silly idealTree ├── chalk@1.1.3
+63 silly idealTree ├── color-convert@1.2.2
+63 silly idealTree ├── combine-source-map@0.1.3
+63 silly idealTree ├── commander@2.9.0
+63 silly idealTree ├── commondir@0.0.2
+63 silly idealTree ├── component-bind@1.0.0
+63 silly idealTree ├── component-emitter@1.1.2
+63 silly idealTree ├── component-inherit@0.0.3
+63 silly idealTree ├── concat-stream@0.1.1
+63 silly idealTree ├── connect@2.7.11
+63 silly idealTree ├── console-browserify@0.1.6
+63 silly idealTree ├── constants-browserify@0.0.1
+63 silly idealTree ├── convert-source-map@0.2.6
+63 silly idealTree ├── cookie-signature@1.0.1
+63 silly idealTree ├── cookie@0.0.5
+63 silly idealTree ├── crypto-browserify@1.0.9
+63 silly idealTree ├── cylon@1.3.0
+63 silly idealTree ├── debug@2.2.0
+63 silly idealTree ├── deep-equal@0.0.0
+63 silly idealTree ├── define-properties@1.1.2
+63 silly idealTree ├── defined@0.0.0
+63 silly idealTree ├── detective@2.1.2
+63 silly idealTree ├── duplexer@0.0.4
+63 silly idealTree ├── ease-component@1.0.0
+63 silly idealTree ├── engine.io-client@1.7.0
+63 silly idealTree ├─┬ engine.io-parser@1.3.0
+63 silly idealTree │ └── has-binary@0.1.6
+63 silly idealTree ├── es6-shim@0.35.1
+63 silly idealTree ├── escape-string-regexp@1.0.5
+63 silly idealTree ├── escodegen@0.0.15
+63 silly idealTree ├── esprima@1.0.2
+63 silly idealTree ├── firmata@0.14.1
+63 silly idealTree ├── foreach@2.0.5
+63 silly idealTree ├── formidable@1.0.14
+63 silly idealTree ├── fresh@0.1.0
+63 silly idealTree ├── function-bind@1.1.0
+63 silly idealTree ├─┬ gl-pixel-stream@1.0.2
+63 silly idealTree │ └─┬ readable-stream@2.1.5
+63 silly idealTree │   ├── buffer-shims@1.0.0
+63 silly idealTree │   ├── core-util-is@1.0.2
+63 silly idealTree │   ├── inherits@2.0.3
+63 silly idealTree │   ├── isarray@1.0.0
+63 silly idealTree │   ├── process-nextick-args@1.0.7
+63 silly idealTree │   ├── string_decoder@0.10.31
+63 silly idealTree │   └── util-deprecate@1.0.2
+63 silly idealTree ├── graceful-readlink@1.0.1
+63 silly idealTree ├── has-ansi@2.0.0
+63 silly idealTree ├── has-binary@0.1.7
+63 silly idealTree ├── has-cors@1.1.0
+63 silly idealTree ├─┬ http-browserify@0.1.14
+63 silly idealTree │ └── concat-stream@1.0.1
+63 silly idealTree ├── immediate@3.0.6
+63 silly idealTree ├── indexof@0.0.1
+63 silly idealTree ├── inherits@1.0.2
+63 silly idealTree ├── inline-source-map@0.2.5
+63 silly idealTree ├─┬ insert-module-globals@0.2.1
+63 silly idealTree │ ├── JSONStream@0.4.4
+63 silly idealTree │ └── through@2.2.7
+63 silly idealTree ├── isarray@0.0.1
+63 silly idealTree ├── isbuffer@0.0.0
+63 silly idealTree ├── johnny-five@0.10.3
+63 silly idealTree ├── jquery@3.1.1
+63 silly idealTree ├── jsonify@0.0.0
+63 silly idealTree ├── jsonparse@0.0.5
+63 silly idealTree ├─┬ JSONStream@0.6.4
+63 silly idealTree │ └── through@2.2.7
+63 silly idealTree ├── kinect@0.1.7
+63 silly idealTree ├── lexical-scope@0.0.15
+63 silly idealTree ├── lie@3.1.0
+63 silly idealTree ├── lodash.clonedeep@4.5.0
+63 silly idealTree ├── lodash.debounce@4.0.8
+63 silly idealTree ├── mime@1.2.11
+63 silly idealTree ├─┬ module-deps@0.10.3
+63 silly idealTree │ ├── concat-stream@1.0.1
+63 silly idealTree │ └── resolve@0.4.3
+63 silly idealTree ├── ms@0.7.1
+63 silly idealTree ├── nan@2.4.0
+63 silly idealTree ├── nanotimer@0.3.10
+63 silly idealTree ├─┬ node-ssh@3.0.1
+63 silly idealTree │ ├── sb-promisify@2.0.1
+63 silly idealTree │ ├─┬ sb-scandir@1.0.0
+63 silly idealTree │ │ └── sb-promisify@1.3.0
+63 silly idealTree │ ├── shell-escape@0.2.0
+63 silly idealTree │ └─┬ ssh2@0.5.2
+63 silly idealTree │   └─┬ ssh2-streams@0.1.11
+63 silly idealTree │     ├── asn1@0.2.3
+63 silly idealTree │     ├── semver@5.3.0
+63 silly idealTree │     └── streamsearch@0.1.2
+63 silly idealTree ├── object-component@0.0.3
+63 silly idealTree ├── object-keys@1.0.11
+63 silly idealTree ├── object.assign@4.0.4
+63 silly idealTree ├── optimist@0.5.2
+63 silly idealTree ├── options@0.0.6
+63 silly idealTree ├── parse-base64vlq-mappings@0.1.4
+63 silly idealTree ├── parsejson@0.0.1
+63 silly idealTree ├── parseqs@0.0.2
+63 silly idealTree ├── parseuri@0.0.4
+63 silly idealTree ├── pause-stream@0.0.4
+63 silly idealTree ├── pause@0.0.1
+63 silly idealTree ├── policyfile@0.0.4
+63 silly idealTree ├── process@0.5.2
+63 silly idealTree ├── punycode@1.2.4
+63 silly idealTree ├── qs@0.6.5
+63 silly idealTree ├── range-parser@0.0.4
+63 silly idealTree ├── redis@0.7.3
+63 silly idealTree ├── resolve@0.3.1
+63 silly idealTree ├── rfile@1.0.0
+63 silly idealTree ├── ruglify@1.0.0
+63 silly idealTree ├── send@0.1.1
+63 silly idealTree ├─┬ serialport@4.0.3
+63 silly idealTree │ └─┬ node-pre-gyp@0.6.30
+63 silly idealTree │   ├─┬ mkdirp@0.5.1
+63 silly idealTree │   │ └── minimist@0.0.8
+63 silly idealTree │   ├─┬ nopt@3.0.6
+63 silly idealTree │   │ └── abbrev@1.0.9
+63 silly idealTree │   ├─┬ npmlog@4.0.0
+63 silly idealTree │   │ ├─┬ are-we-there-yet@1.1.2
+63 silly idealTree │   │ │ ├── delegates@1.0.0
+63 silly idealTree │   │ │ └─┬ readable-stream@2.1.5
+63 silly idealTree │   │ │   ├── buffer-shims@1.0.0
+63 silly idealTree │   │ │   ├── core-util-is@1.0.2
+63 silly idealTree │   │ │   ├── inherits@2.0.3
+63 silly idealTree │   │ │   ├── isarray@1.0.0
+63 silly idealTree │   │ │   ├── process-nextick-args@1.0.7
+63 silly idealTree │   │ │   ├── string_decoder@0.10.31
+63 silly idealTree │   │ │   └── util-deprecate@1.0.2
+63 silly idealTree │   │ ├── console-control-strings@1.1.0
+63 silly idealTree │   │ ├─┬ gauge@2.6.0
+63 silly idealTree │   │ │ ├── aproba@1.0.4
+63 silly idealTree │   │ │ ├── has-color@0.1.7
+63 silly idealTree │   │ │ ├── has-unicode@2.0.1
+63 silly idealTree │   │ │ ├── object-assign@4.1.0
+63 silly idealTree │   │ │ ├── signal-exit@3.0.1
+63 silly idealTree │   │ │ ├─┬ string-width@1.0.2
+63 silly idealTree │   │ │ │ ├─┬ code-point-at@1.0.1
+63 silly idealTree │   │ │ │ │ └── number-is-nan@1.0.1
+63 silly idealTree │   │ │ │ └─┬ is-fullwidth-code-point@1.0.0
+63 silly idealTree │   │ │ │   └── number-is-nan@1.0.1
+63 silly idealTree │   │ │ ├─┬ strip-ansi@3.0.1
+63 silly idealTree │   │ │ │ └── ansi-regex@2.0.0
+63 silly idealTree │   │ │ └── wide-align@1.1.0
+63 silly idealTree │   │ └── set-blocking@2.0.0
+63 silly idealTree │   ├─┬ rc@1.1.6
+63 silly idealTree │   │ ├── deep-extend@0.4.1
+63 silly idealTree │   │ ├── ini@1.3.4
+63 silly idealTree │   │ ├── minimist@1.2.0
+63 silly idealTree │   │ └── strip-json-comments@1.0.4
+63 silly idealTree │   ├─┬ request@2.75.0
+63 silly idealTree │   │ ├── aws-sign2@0.6.0
+63 silly idealTree │   │ ├── aws4@1.4.1
+63 silly idealTree │   │ ├─┬ bl@1.1.2
+63 silly idealTree │   │ │ └─┬ readable-stream@2.0.6
+63 silly idealTree │   │ │   ├── core-util-is@1.0.2
+63 silly idealTree │   │ │   ├── inherits@2.0.3
+63 silly idealTree │   │ │   ├── isarray@1.0.0
+63 silly idealTree │   │ │   ├── process-nextick-args@1.0.7
+63 silly idealTree │   │ │   ├── string_decoder@0.10.31
+63 silly idealTree │   │ │   └── util-deprecate@1.0.2
+63 silly idealTree │   │ ├── caseless@0.11.0
+63 silly idealTree │   │ ├─┬ combined-stream@1.0.5
+63 silly idealTree │   │ │ └── delayed-stream@1.0.0
+63 silly idealTree │   │ ├── extend@3.0.0
+63 silly idealTree │   │ ├── forever-agent@0.6.1
+63 silly idealTree │   │ ├─┬ form-data@2.0.0
+63 silly idealTree │   │ │ └── asynckit@0.4.0
+63 silly idealTree │   │ ├─┬ har-validator@2.0.6
+63 silly idealTree │   │ │ ├─┬ chalk@1.1.3
+63 silly idealTree │   │ │ │ ├── ansi-styles@2.2.1
+63 silly idealTree │   │ │ │ ├── escape-string-regexp@1.0.5
+63 silly idealTree │   │ │ │ ├─┬ has-ansi@2.0.0
+63 silly idealTree │   │ │ │ │ └── ansi-regex@2.0.0
+63 silly idealTree │   │ │ │ ├─┬ strip-ansi@3.0.1
+63 silly idealTree │   │ │ │ │ └── ansi-regex@2.0.0
+63 silly idealTree │   │ │ │ └── supports-color@2.0.0
+63 silly idealTree │   │ │ ├─┬ is-my-json-valid@2.15.0
+63 silly idealTree │   │ │ │ ├── generate-function@2.0.0
+63 silly idealTree │   │ │ │ ├─┬ generate-object-property@1.2.0
+63 silly idealTree │   │ │ │ │ └── is-property@1.0.2
+63 silly idealTree │   │ │ │ ├── jsonpointer@4.0.0
+63 silly idealTree │   │ │ │ └── xtend@4.0.1
+63 silly idealTree │   │ │ └─┬ pinkie-promise@2.0.1
+63 silly idealTree │   │ │   └── pinkie@2.0.4
+63 silly idealTree │   │ ├─┬ hawk@3.1.3
+63 silly idealTree │   │ │ ├── boom@2.10.1
+63 silly idealTree │   │ │ ├── cryptiles@2.0.5
+63 silly idealTree │   │ │ ├── hoek@2.16.3
+63 silly idealTree │   │ │ └── sntp@1.0.9
+63 silly idealTree │   │ ├─┬ http-signature@1.1.1
+63 silly idealTree │   │ │ ├── assert-plus@0.2.0
+63 silly idealTree │   │ │ ├─┬ jsprim@1.3.1
+63 silly idealTree │   │ │ │ ├── extsprintf@1.0.2
+63 silly idealTree │   │ │ │ ├── json-schema@0.2.3
+63 silly idealTree │   │ │ │ └── verror@1.3.6
+63 silly idealTree │   │ │ └─┬ sshpk@1.10.1
+63 silly idealTree │   │ │   ├── asn1@0.2.3
+63 silly idealTree │   │ │   ├── assert-plus@1.0.0
+63 silly idealTree │   │ │   ├── bcrypt-pbkdf@1.0.0
+63 silly idealTree │   │ │   ├── dashdash@1.14.0
+63 silly idealTree │   │ │   ├── ecc-jsbn@0.1.1
+63 silly idealTree │   │ │   ├── getpass@0.1.6
+63 silly idealTree │   │ │   ├── jodid25519@1.0.2
+63 silly idealTree │   │ │   ├── jsbn@0.1.0
+63 silly idealTree │   │ │   └── tweetnacl@0.14.3
+63 silly idealTree │   │ ├── is-typedarray@1.0.0
+63 silly idealTree │   │ ├── isstream@0.1.2
+63 silly idealTree │   │ ├── json-stringify-safe@5.0.1
+63 silly idealTree │   │ ├─┬ mime-types@2.1.12
+63 silly idealTree │   │ │ └── mime-db@1.24.0
+63 silly idealTree │   │ ├── node-uuid@1.4.7
+63 silly idealTree │   │ ├── oauth-sign@0.8.2
+63 silly idealTree │   │ ├── qs@6.2.1
+63 silly idealTree │   │ ├── stringstream@0.0.5
+63 silly idealTree │   │ ├── tough-cookie@2.3.1
+63 silly idealTree │   │ └── tunnel-agent@0.4.3
+63 silly idealTree │   ├─┬ rimraf@2.5.4
+63 silly idealTree │   │ └─┬ glob@7.1.0
+63 silly idealTree │   │   ├── fs.realpath@1.0.0
+63 silly idealTree │   │   ├─┬ inflight@1.0.5
+63 silly idealTree │   │   │ └── wrappy@1.0.2
+63 silly idealTree │   │   ├── inherits@2.0.3
+63 silly idealTree │   │   ├─┬ minimatch@3.0.3
+63 silly idealTree │   │   │ └─┬ brace-expansion@1.1.6
+63 silly idealTree │   │   │   ├── balanced-match@0.4.2
+63 silly idealTree │   │   │   └── concat-map@0.0.1
+63 silly idealTree │   │   ├─┬ once@1.4.0
+63 silly idealTree │   │   │ └── wrappy@1.0.2
+63 silly idealTree │   │   └── path-is-absolute@1.0.1
+63 silly idealTree │   ├── semver@5.3.0
+63 silly idealTree │   ├─┬ tar-pack@3.1.4
+63 silly idealTree │   │ ├─┬ fstream-ignore@1.0.5
+63 silly idealTree │   │ │ ├── inherits@2.0.3
+63 silly idealTree │   │ │ └─┬ minimatch@3.0.3
+63 silly idealTree │   │ │   └─┬ brace-expansion@1.1.6
+63 silly idealTree │   │ │     ├── balanced-match@0.4.2
+63 silly idealTree │   │ │     └── concat-map@0.0.1
+63 silly idealTree │   │ ├─┬ fstream@1.0.10
+63 silly idealTree │   │ │ ├── graceful-fs@4.1.9
+63 silly idealTree │   │ │ └── inherits@2.0.3
+63 silly idealTree │   │ ├─┬ once@1.3.3
+63 silly idealTree │   │ │ └── wrappy@1.0.2
+63 silly idealTree │   │ ├─┬ readable-stream@2.1.5
+63 silly idealTree │   │ │ ├── buffer-shims@1.0.0
+63 silly idealTree │   │ │ ├── core-util-is@1.0.2
+63 silly idealTree │   │ │ ├── inherits@2.0.3
+63 silly idealTree │   │ │ ├── isarray@1.0.0
+63 silly idealTree │   │ │ ├── process-nextick-args@1.0.7
+63 silly idealTree │   │ │ ├── string_decoder@0.10.31
+63 silly idealTree │   │ │ └── util-deprecate@1.0.2
+63 silly idealTree │   │ └── uid-number@0.0.6
+63 silly idealTree │   └─┬ tar@2.2.1
+63 silly idealTree │     ├── block-stream@0.0.9
+63 silly idealTree │     ├─┬ fstream@1.0.10
+63 silly idealTree │     │ └── graceful-fs@4.1.9
+63 silly idealTree │     └── inherits@2.0.3
+63 silly idealTree ├── shell-quote@0.0.1
+63 silly idealTree ├─┬ socket.io-client@1.5.0
+63 silly idealTree │ └── component-emitter@1.2.0
+63 silly idealTree ├─┬ socket.io-parser@2.2.6
+63 silly idealTree │ └── json3@3.3.2
+63 silly idealTree ├─┬ socket.io@0.9.17
+63 silly idealTree │ ├── commander@2.1.0
+63 silly idealTree │ ├── nan@1.0.0
+63 silly idealTree │ ├── socket.io-client@0.9.16
+63 silly idealTree │ ├── uglify-js@1.2.5
+63 silly idealTree │ └── ws@0.4.32
+63 silly idealTree ├── source-map@0.1.43
+63 silly idealTree ├── step@0.0.6
+63 silly idealTree ├── strip-ansi@3.0.1
+63 silly idealTree ├── supports-color@2.0.0
+63 silly idealTree ├─┬ syntax-error@0.0.1
+63 silly idealTree │ └── esprima@0.9.9
+63 silly idealTree ├── tape@0.2.2
+63 silly idealTree ├── temporal@0.5.0
+63 silly idealTree ├── through@2.3.8
+63 silly idealTree ├── tinycolor@0.0.1
+63 silly idealTree ├── to-array@0.1.4
+63 silly idealTree ├── to-utf8@0.0.1
+63 silly idealTree ├─┬ uglify-js@2.2.5
+63 silly idealTree │ └── optimist@0.3.7
+63 silly idealTree ├── ultron@1.0.2
+63 silly idealTree ├── umd@1.1.1
+63 silly idealTree ├── vm-browserify@0.0.4
+63 silly idealTree ├── websocket-stream@0.1.0
+63 silly idealTree ├── wordwrap@0.0.3
+63 silly idealTree ├── ws@1.1.1
+63 silly idealTree ├── wtf-8@1.0.0
+63 silly idealTree ├── xmlhttprequest-ssl@1.5.1
+63 silly idealTree ├── xmlhttprequest@1.4.2
+63 silly idealTree ├── yeast@0.1.2
+63 silly idealTree ├── zeparser@0.0.5
+63 silly idealTree └── zlib-browserify@0.0.3
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 silly generateActionsToTake Finishing
+67 silly diffTrees action count 1
+68 silly diffTrees add kinect@0.1.7
+69 silly decomposeActions action count 8
+70 silly decomposeActions fetch kinect@0.1.7
+71 silly decomposeActions extract kinect@0.1.7
+72 silly decomposeActions test kinect@0.1.7
+73 silly decomposeActions preinstall kinect@0.1.7
+74 silly decomposeActions build kinect@0.1.7
+75 silly decomposeActions install kinect@0.1.7
+76 silly decomposeActions postinstall kinect@0.1.7
+77 silly decomposeActions finalize kinect@0.1.7
+78 silly executeActions Starting
+79 silly install executeActions
+80 silly doSerial global-install 0
+81 silly doParallel fetch 1
+82 verbose correctMkdir /home/reza/.npm/_locks correctMkdir not in flight; initializing
+83 verbose lock using /home/reza/.npm/_locks/staging-27c84e2cb0504f36.lock for /home/reza/Sites/arova-cli/node_modules/.staging
+84 silly doParallel extract 1
+85 silly extract kinect@0.1.7
+86 verbose unbuild node_modules/.staging/kinect-79e9087c
+87 silly gentlyRm /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c is being purged from base /home/reza/Sites/arova-cli
+88 verbose gentlyRm don't care about contents; nuking /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c
+89 verbose tar unpack /home/reza/.npm/kinect/0.1.7/package.tgz
+90 verbose tar unpacking to /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c
+91 silly gentlyRm /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c is being purged
+92 verbose gentlyRm don't care about contents; nuking /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c
+93 silly gunzTarPerm modes [ '775', '664' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+96 silly gunzTarPerm extractEntry .npmignore
+97 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+98 silly gunzTarPerm extractEntry README.md
+99 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+100 silly gunzTarPerm extractEntry kinect.js
+101 silly gunzTarPerm modified mode [ 'kinect.js', 420, 436 ]
+102 silly gunzTarPerm extractEntry binding.gyp
+103 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+104 silly gunzTarPerm extractEntry src/kinect.cc
+105 silly gunzTarPerm modified mode [ 'src/kinect.cc', 420, 436 ]
+106 silly gunzTarPerm extractEntry test/base.js
+107 silly gunzTarPerm modified mode [ 'test/base.js', 420, 436 ]
+108 silly gunzTarPerm extractEntry test/depth.js
+109 silly gunzTarPerm modified mode [ 'test/depth.js', 420, 436 ]
+110 silly gunzTarPerm extractEntry test/led.js
+111 silly gunzTarPerm modified mode [ 'test/led.js', 420, 436 ]
+112 silly gunzTarPerm extractEntry test/video.js
+113 silly gunzTarPerm modified mode [ 'test/video.js', 420, 436 ]
+114 silly gunzTarPerm extractEntry TODO.md
+115 silly gunzTarPerm modified mode [ 'TODO.md', 420, 436 ]
+116 silly gentlyRm /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c/node_modules is being purged
+117 verbose gentlyRm don't care about contents; nuking /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c/node_modules
+118 silly doParallel preinstall 1
+119 silly preinstall kinect@0.1.7 /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c
+120 info lifecycle kinect@0.1.7~preinstall: kinect@0.1.7
+121 silly lifecycle kinect@0.1.7~preinstall: no script for preinstall, continuing
+122 silly doReverseSerial remove 0
+123 silly doSerial move 0
+124 silly doSerial finalize 1
+125 silly finalize /home/reza/Sites/arova-cli/node_modules/kinect
+126 silly doSerial build 1
+127 silly build kinect@0.1.7
+128 info linkStuff kinect@0.1.7
+129 silly linkStuff kinect@0.1.7 has /home/reza/Sites/arova-cli/node_modules as its parent node_modules
+130 verbose linkBins kinect@0.1.7
+131 verbose linkMans kinect@0.1.7
+132 silly doSerial global-link 0
+133 silly doParallel update-linked 0
+134 silly doSerial install 1
+135 silly install kinect@0.1.7 /home/reza/Sites/arova-cli/node_modules/.staging/kinect-79e9087c
+136 info lifecycle kinect@0.1.7~install: kinect@0.1.7
+137 verbose lifecycle kinect@0.1.7~install: unsafe-perm in lifecycle true
+138 verbose lifecycle kinect@0.1.7~install: PATH: /home/reza/.nvm/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/home/reza/Sites/arova-cli/node_modules/kinect/node_modules/.bin:/home/reza/Sites/arova-cli/node_modules/.bin:/home/reza/.nvm/v6.3.1/bin:/home/reza/.nvm/v6.3.1/bin:/home/reza/.rvm/gems/ruby-2.1.1/bin:/home/reza/.rvm/gems/ruby-2.1.1@global/bin:/home/reza/.rvm/rubies/ruby-2.1.1/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/reza/.rvm/bin
+139 verbose lifecycle kinect@0.1.7~install: CWD: /home/reza/Sites/arova-cli/node_modules/kinect
+140 silly lifecycle kinect@0.1.7~install: Args: [ '-c', 'node-gyp rebuild' ]
+141 silly lifecycle kinect@0.1.7~install: Returned: code: 1  signal: null
+142 info lifecycle kinect@0.1.7~install: Failed to exec install script
+143 verbose unlock done using /home/reza/.npm/_locks/staging-27c84e2cb0504f36.lock for /home/reza/Sites/arova-cli/node_modules/.staging
+144 silly rollbackFailedOptional Starting
+145 silly rollbackFailedOptional Finishing
+146 silly runTopLevelLifecycles Starting
+147 silly runTopLevelLifecycles Finishing
+148 silly install printInstalled
+149 warn arduino-ctrl@1.0.0 No description
+150 warn arduino-ctrl@1.0.0 No repository field.
+151 verbose stack Error: kinect@0.1.7 install: `node-gyp rebuild`
+151 verbose stack Exit status 1
+151 verbose stack     at EventEmitter.<anonymous> (/home/reza/.nvm/v6.3.1/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+151 verbose stack     at emitTwo (events.js:106:13)
+151 verbose stack     at EventEmitter.emit (events.js:191:7)
+151 verbose stack     at ChildProcess.<anonymous> (/home/reza/.nvm/v6.3.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+151 verbose stack     at emitTwo (events.js:106:13)
+151 verbose stack     at ChildProcess.emit (events.js:191:7)
+151 verbose stack     at maybeClose (internal/child_process.js:852:16)
+151 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+152 verbose pkgid kinect@0.1.7
+153 verbose cwd /home/reza/Sites/arova-cli
+154 error Linux 4.4.0-43-generic
+155 error argv "/home/reza/.nvm/v6.3.1/bin/node" "/home/reza/.nvm/v6.3.1/bin/npm" "install" "kinect"
+156 error node v6.3.1
+157 error npm  v3.10.3
+158 error code ELIFECYCLE
+159 error kinect@0.1.7 install: `node-gyp rebuild`
+159 error Exit status 1
+160 error Failed at the kinect@0.1.7 install script 'node-gyp rebuild'.
+160 error Make sure you have the latest version of node.js and npm installed.
+160 error If you do, this is most likely a problem with the kinect package,
+160 error not with npm itself.
+160 error Tell the author that this fails on your system:
+160 error     node-gyp rebuild
+160 error You can get information on how to open an issue for this project with:
+160 error     npm bugs kinect
+160 error Or if that isn't available, you can get their info via:
+160 error     npm owner ls kinect
+160 error There is likely additional logging output above.
+161 verbose exit [ 1, true ]
