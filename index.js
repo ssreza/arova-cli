@@ -1,6 +1,17 @@
 var moving = false;
 var socket = io.connect('http://localhost:3000');
 var angle= 1;
+$('#view').hide();
+$('#submit').on('click', function(event){
+    event.preventDefault();
+    var name = $('#username').val();
+    var password = $('#password').val();
+    if (name === 'admin' && password === '123') {
+        $("#login").hide();
+        $('#view').show();
+
+    }
+});
 socket.on('news', function(data) {
     console.log(data);
     angle= data.position.angle;
