@@ -8,6 +8,7 @@
     "gl-pixel-stream": "^1.0.2",
     "johnny-five": "^0.10.3",
     "jquery": "*",
+    "node-ssh": "^3.0.1",
     "socket.io": "*",
     "socket.io-client": "*"
   },
