@@ -120,10 +120,10 @@ function handler(req, res) {
 
 // on a socket connection
 io.sockets.on('connection', function(socket) {
-    var stream = websocketS(ws);
+    var stream = websocketS(socket);
       kstream.pipe(stream);
       console.log("connection made");
-      ws.on('close', function() {
+      socket.on('close', function() {
         stream.writable=false;
         console.log('closed socket');
       });
