@@ -2,11 +2,13 @@
 var app = require('http').createServer(handler),
     path = require("path"),
      url = require('url'),
+     kinect =  require('kinect'),
     io = require('socket.io').listen(app),
     fs = require('fs'),
     five = require("johnny-five"),
     board, servo, led, sensor, motor, direction, position;
-
+    var BufferStream = require('bufferstream');
+ var websocketS = require('websocket-stream');
 const mimetypes = {
     "html": "text/html",
     "jpeg": "image/jpeg",
@@ -16,7 +18,17 @@ const mimetypes = {
     "css":"text/css"
 }
 var fs = require("fs");
+var kcontext = kinect();
 
+kcontext.resume();
+
+kcontext.start('depth');
+
+var kstream = new BufferStream();
+
+kcontext.on('depth', function (buf) {
+  kstream.write(buf);
+});
 function readJson() {
 
 }
@@ -108,7 +120,13 @@ function handler(req, res) {
 
 // on a socket connection
 io.sockets.on('connection', function(socket) {
-
+    var stream = websocketS(ws);
+      kstream.pipe(stream);
+      console.log("connection made");
+      ws.on('close', function() {
+        stream.writable=false;
+        console.log('closed socket');
+      });
 
     // if board is ready
     if (board.isReady) {

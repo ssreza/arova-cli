@@ -10,7 +10,15 @@
     "jquery": "*",
     "node-ssh": "^3.0.1",
     "socket.io": "*",
-    "socket.io-client": "*"
+    "socket.io-client": "*",
+    "bufferstream": "~0.5.1",
+    "kinect": "~0.1.7",
+    "buffer-stream": "~0.0.1",
+    "connect": "~2.7.11",
+    "browserify": "~2.18.1",
+    "socket.io": "~0.9.16",
+    "websocket-stream": "~0.1.0",
+    "step": "~0.0.5"
   },
   "devDependencies": {},
   "scripts": {
